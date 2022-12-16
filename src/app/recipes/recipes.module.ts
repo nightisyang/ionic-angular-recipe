@@ -7,14 +7,10 @@ import { IonicModule } from '@ionic/angular';
 import { RecipesPageRoutingModule } from './recipes-routing.module';
 
 import { RecipesPage } from './recipes.page';
+import { RecipeItemsComponent } from './recipe-items/recipe-items.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    RecipesPageRoutingModule
-  ],
-  declarations: [RecipesPage]
+  imports: [CommonModule, FormsModule, IonicModule, RecipesPageRoutingModule],
+  declarations: [RecipesPage, RecipeItemsComponent],
 })
 export class RecipesPageModule {}
